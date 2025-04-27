@@ -599,6 +599,14 @@
 
     <!-- JavaScript -->
     <script>
+        // Smooth scroll for logo
+document.querySelector('.logo').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
         // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
